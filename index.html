@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+ <section style="text-align:center; padding:20px; background:rgba(255,255,255,0.4); border-radius:12px; margin:0 24px 20px;">
+  <h2 style="font-family:'Playfair Display',serif; color:#6b0f1a;">Un recuerdo especial 🎥</h2>
+  <iframe width="80%" height="400"
+    src="M+A=25.mp4"
+    title="M+A=25.mp4"
+    frameborder="0"
+    style="border-radius:16px; box-shadow:0 6px 20px rgba(0,0,0,0.2)"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen>
+  </iframe>
+</section>
+
+</div>
+
+  <style>
+    :root{--bg1:#ff9a9e;--bg2:#fad0c4;--accent:#ffffff;--card:rgba(255,255,255,0.85)}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Montserrat,system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;min-height:100vh;background:linear-gradient(135deg,var(--bg1),var(--bg2));display:flex;align-items:center;justify-content:center;padding:24px}
+    .card{width:100%;max-width:900px;background:var(--card);border-radius:18px;box-shadow:0 8px 30px rgba(0,0,0,0.12);overflow:hidden}
+    header{display:flex;gap:24px;padding:28px;align-items:center}
+    .portrait{width:160px;height:160px;border-radius:16px;flex-shrink:0;background-image:url('https://images.unsplash.com/photo-1524504388940-b1c1722653e1?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder');background-size:cover;background-position:center;box-shadow:0 6px 18px rgba(0,0,0,0.12)}
+    .title{flex:1}
+    h1{font-family:'Playfair Display',serif;margin:0;font-size:30px;color:#6b0f1a}
+    p.lead{margin:6px 0 0;color:#5a2b2b}
+    .actions{display:flex;gap:10px;margin-top:14px}
+    .btn{background:#6b0f1a;color:var(--accent);padding:10px 14px;border-radius:10px;border:none;cursor:pointer;font-weight:600}
+    main{padding:24px;border-top:1px solid rgba(0,0,0,0.04)}
+    .grid{display:grid;grid-template-columns:1fr 320px;gap:20px}
+    .message{background:linear-gradient(180deg,rgba(255,255,255,0.6),rgba(255,255,255,0.45));padding:18px;border-radius:12px}
+    .message h2{font-family:'Playfair Display',serif;margin:0 0 6px;color:#6b0f1a}
+    .poem{margin:8px 0 0;color:#333;line-height:1.6}
+    .side{display:flex;flex-direction:column;gap:14px}
+    .rose{height:180px;background-image:url('https://images.unsplash.com/photo-1504198453319-5ce911bafcde?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder');background-size:cover;border-radius:12px}
+    .note{padding:12px;background:rgba(107,15,26,0.05);border-radius:10px}
+    footer{padding:16px;text-align:center;color:#4a2a2a;font-size:14px}
+    @media (max-width:880px){.grid{grid-template-columns:1fr}.portrait{width:120px;height:120px}}
+    /* heart animation */
+    .floating-heart{position:fixed;right:18px;bottom:18px;background:#fff;border-radius:50%;padding:12px;box-shadow:0 6px 20px rgba(0,0,0,0.12)}
+    .heart{width:22px;height:22px;display:inline-block;transform:rotate(-45deg);position:relative}
+    .heart::before,.heart::after{content:'';width:22px;height:22px;background:#e83b4a;border-radius:50%;position:absolute}
+    .heart::before{top:-11px}
+    .heart::after{left:11px}
+    .heart span{position:absolute;left:4px;top:4px;color:#fff;font-size:12px}
+    .confetti{position:fixed;left:50%;top:10%;pointer-events:none}
+  </style>
+</head>
+<body>
+  <div class="TU Y YO .jpg" role="main">
+    <header>
+      <div class="TU Y YO .jpg" aria-hidden="true"></div>
+      <div class="title">
+        <h1>Para María, con todo mi cariño ❤</h1>
+        <p class="lead">Cada día a tu lado es una nueva razón para sonreír. Esta página la hice pensando en ti.</p>
+        <div class="actions">
+          <button class="btn" id="btn-letter">Leer carta</button>
+          <button class="btn" id="btn-rose">Enviar rosa</button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="grid">
+        <section class="message">
+          <h2>Mi carta para ti</h2>
+          <div class="poem" id="carta">
+            <p>María,</p>
+            <p>En cada abrazo encuentro un hogar, y en tu sonrisa, la promesa de un nuevo amanecer. Gracias por ser compañera, amiga y el latido constante que alegra mis días.</p>
+            <p>Te prometo cuidar tus sueños, apoyarte en tus metas y celebrar cada pequeño logro a tu lado.</p>
+            <p>Con amor,</p>
+            <p><strong>Tu [A+M=15❤]</strong></p>
+          </div>
+        </section>
+
+        <div class="rose" id="rose" aria-hidden="true"></div>
+<div class="rose" id="rose" aria-hidden="true"></div>
+
+<!-- NUESTRA FOTO -->
+<div class="note">
+  <strong>Nuestro recuerdo juntos 💖:</strong>
+  <img src="TU Y YO .jpg" alt="Foto de María y yo" style="width:100%;border-radius:12px;margin-top:8px;box-shadow:0 6px 18px rgba(0,0,0,0.15)">
+</div>
+
+
+          <div class="note">
+            <strong>Detalles:</strong>
+            <p style="margin:6px 0 0">TE AMO MUCHO MI AMOR Y NUNCA TE QUIERO PERDER ❤</p>
+          </div>
+
+          <div class="note">
+            <strong>Enviar un mensaje:</strong>
+            <form id="msgForm">
+              <input type="text" id="name" placeholder="Tu nombre" style="width:100%;padding:8px;margin-bottom:8px;border-radius:8px;border:1px solid #ddd">
+              <textarea id="msg" placeholder="Escribe algo bonito para María..." style="width:100%;padding:8px;border-radius:8px;border:1px solid #ddd;height:80px"></textarea>
+              <button type="submit" class="btn" style="width:100%;margin-top:8px">Enviar mensaje</button>
+            </form>
+            <div id="sent" style="display:none;margin-top:8px;color:#2d6a4f">Mensaje listo para enviar (simulado).</div>
+          </div>
+        </aside>
+      </div>
+    </main>
+
+    <footer>
+      <small>Hecho con ❤️ para <strong>María</strong></small>
+    </footer>
+  </div>
+
+  <div class="floating-heart" title="Confetti & heart">
+    <div class="heart"><span>❤</span></div>
+  </div>
+
+  <script>
+    // interacciones simples
+    const btnLetter = document.getElementById('btn-letter');
+    const carta = document.getElementById('carta');
+    btnLetter.addEventListener('click', ()=>{
+      carta.style.transition = 'all 0.5s';
+      carta.style.transform = 'translateY(-6px)';
+      setTimeout(()=> carta.style.transform = 'translateY(0)', 600);
+    });
+
+    // enviar rosa (animación de confetti simple)
+    const btnRose = document.getElementById('btn-rose');
+    btnRose.addEventListener('click', ()=>{
+      const confetti = document.createElement('div');
+      confetti.className = 'confetti';
+      confetti.innerHTML = Array.from({length:20}).map(()=>{
+        const size = Math.floor(Math.random()*12)+6;
+        const left = Math.floor(Math.random()*80)-40;
+        const color = ['#ff6b6b','#feca57','#1dd1a1','#54a0ff'][Math.floor(Math.random()*4)];
+        return `<div style="position:absolute;left:${left}px;top:0;width:${size}px;height:${size}px;background:${color};opacity:0.95;border-radius:3px;transform:rotate(${Math.random()*360}deg);animation:fall 2.5s linear forwards"></div>`
+      }).join('');
+      document.body.appendChild(confetti);
+      setTimeout(()=> confetti.remove(), 2800);
+    });
+
+    // form simulate
+    document.getElementById('msgForm').addEventListener('submit', (e)=>{
+      e.preventDefault();
+      document.getElementById('sent').style.display = 'block';
+      setTimeout(()=>document.getElementById('sent').style.display = 'none',3000);
+      document.getElementById('name').value='';
+      document.getElementById('msg').value='';
+    });
+
+    // confetti keyframes injection
+    const style = document.createElement('style');
+    style.innerHTML = `@keyframes fall{0%{transform:translateY(-10vh) rotate(0deg);opacity:1}100%{transform:translateY(90vh) rotate(360deg);opacity:0}}`;
+    document.head.appendChild(style);
+  </script>
+</body>
+</html>
